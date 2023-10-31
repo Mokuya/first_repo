@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {
+	double a, b;
+	char opr;
+	cout << "Input a";
+	cin >> a;
+	cout << "Input b";
+	cin >> b;
+	cout << "Input opr";
+	cin >> opr;
+	while (opr != '+' || opr != '-' || opr != '*' || opr != '/') {
+		cout << "Input another operation";
+		cin >> opr;
+		if (opr == '+' || opr == '-' || opr == '*' || opr == '/') { break; }
+	}
+	if (opr == '+') {
+		cout << "a+b= " << a + b << endl;
+	}
+	else if (opr == '-') {
+		cout << "a-b= " << a - b << endl;
+	}
+	else if (opr == '*') {
+		cout << "a*b= " << a * b << endl;
+	}
+	else if (opr == '/') {
+		cout << "a/b= " << a / b << endl;
+	}
+	else {
+		cout << "incorect input" << endl;
+	}
+}
